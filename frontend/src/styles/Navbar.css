@@ -1,0 +1,86 @@
+/* Navbar.css */
+
+/* Background color and other basic styling */
+.navbar {
+  background-color: #343a40 !important;
+  padding: 1rem;
+  height: 60px;
+}
+
+/* Branding text */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #adb5bd !important;
+  font-size: 1.1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+/* Navbar profile dropdown */
+.nav-item .dropdown-toggle {
+  color: #adb5bd !important;
+}
+
+.nav-item .dropdown-menu {
+  background-color: #495057;
+  border: none;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px 15px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #6c757d;
+  color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background-color: #343a40;
+      padding: 1rem;
+  }
+}
+
+/* Logout button styling */
+button.dropdown-item {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+button.dropdown-item:hover {
+  background-color: #6c757d;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28 255, 255, 255, 0.55 %29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Navbar container fluid padding adjustment */
+.container-fluid {
+  max-width: 1200px;
+}

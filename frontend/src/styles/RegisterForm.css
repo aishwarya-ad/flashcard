@@ -1,0 +1,120 @@
+/* Register form container */
+.register-container {
+    max-width: 100%; /* Adjusted for better form container width */
+    width: 100%;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading style */
+  h2 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Error message styling */
+  p {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Label styling */
+  label {
+    width: 100%; /* Make label take up full width of the container */
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: left;
+    display: block; /* Ensure label appears above the input */
+  }
+  
+  /* Form layout */
+  form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Input fields styling */
+  form:input {
+    width: 100%; /* Make input fields take up full width of container */
+    padding: 10px;
+    margin-bottom: 20px; /* Add more margin for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    /* box-sizing: border-box; */
+    /* transition: border 0.3s ease; */
+    background-color: #fff;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%; /* Button should also take full width */
+    padding: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Placeholder text style */
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .register-container {
+      margin: 30px 15px;
+      padding: 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    input, button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .register-container {
+      width: 60%; /* Adjust width for larger screens */
+    }
+  
+    input {
+      width: 100%;
+      margin: 12px auto;
+    }
+  }
+  

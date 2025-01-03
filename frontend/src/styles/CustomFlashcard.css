@@ -1,0 +1,141 @@
+/* General page styling */
+.custom-flashcard-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    color: #333;
+  }
+  
+  /* Page title */
+  h1 {
+    margin-bottom: 20px;
+    color: #12304f;
+  }
+  
+  /* Flashcard container */
+  .flashcard-container {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Category input */
+  .category-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Question and Answer container */
+  .qa-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Input fields for question and answer */
+  .qa-input {
+    width: 48%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  /* Save button */
+  .save-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Displaying saved flashcard */
+  .flashcard-display {
+    text-align: left;
+  }
+  
+  .flashcard-display p {
+    margin: 10px 0;
+  }
+  
+  /* Edit button */
+  .edit-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #e68a00;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .edit-button, .save-button {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #e68a00;
+  }
+  
+  .save-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  
+  .done-button {
+    /* font-size: 14px; */
+    width: 30%;
+    background-color:  #4caf50;;
+  }
+  .done-button:hover{
+    background-color: #45a049;
+  }

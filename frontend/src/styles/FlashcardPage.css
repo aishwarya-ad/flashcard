@@ -1,0 +1,155 @@
+.flashcards-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f9ff;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #12304f;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  max-width: 100000px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #12304f;
+  font-size: 2rem;
+  font-weight: bold;
+}
+textarea {
+  width: 500px;
+  height: 120px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.3);
+}
+
+/* button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #12304f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+} */
+
+/* button:hover {
+  background-color: #073056;
+} */
+
+/* button:active {
+  transform: scale(0.98);
+} */
+
+/* button:disabled {
+  background-color: #b8c6d9;
+  cursor: not-allowed;
+} */
+
+input[type="file"] {
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: #ecf0f1;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #e0e4e9;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .flashcards-page {
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  justify-content: center;
+  /* background-color:#12304f ; */
+  width: 100%;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #12304f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

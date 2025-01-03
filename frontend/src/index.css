@@ -1,0 +1,103 @@
+.navbar {
+  background-color: #212529; /* Dark background color */
+  padding: 0.5rem 1rem; /* Smaller padding for a compact navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  display: flex;
+  justify-content: space-between; /* Align left and right sections */
+  align-items: center;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.2rem; /* Smaller font size for the brand */
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.navbar-brand:hover {
+  color: #adb5bd;
+}
+
+/* Navbar links */
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem; /* Equal spacing between links */
+}
+
+.navbar-nav .nav-link {
+  color: #e9ecef;
+  font-size: 0.9rem; /* Smaller font size for links */
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: #495057;
+  font-weight: bold;
+}
+
+/* Profile section */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Spacing between elements */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: #343a40;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #e9ecef;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #ffffff;
+  background-color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .navbar-profile {
+    align-self: flex-end;
+  }
+}
