@@ -1,7 +1,7 @@
 import requests
 from PyPDF2 import PdfReader
 import os
-from utils.gemini_api import call_gemini_api
+from utils.gemini_api import call_gemini_langchain
 
 def extract_text_from_pdf(pdf_file):
     print("Extract from pdf called")
@@ -13,7 +13,7 @@ def extract_text_from_pdf(pdf_file):
     return text
 
 def generate_flashcards_from_pdf_content(text):
-    response = call_gemini_api(text)
+    response = call_gemini_langchain(text)
     if response:
         return response
     else:

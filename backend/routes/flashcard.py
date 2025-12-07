@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required,get_jwt_identity
 from bson import ObjectId
-from utils.gemini_api import call_gemini_api
+from utils.gemini_api import call_gemini_langchain
 from models.flashcard import create_flashcard_schema
 from utils.pdf_utils import generate_flashcards_from_pdf_content,extract_text_from_pdf
 
@@ -43,7 +43,7 @@ def generate_combined_flashcards():
     combined_input = (prompt + "\n\n" + pdf_text).strip()
     if not combined_input:
         return jsonify({"message": "No valid input provided after combining."}), 400
-    flashcards = call_gemini_api(combined_input)
+    flashcards = call_gemini_langchain(combined_input)
     if not flashcards:
         return jsonify({"message": "Failed to generate flashcards."}), 500
     flashcardsarray = []

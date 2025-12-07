@@ -50,9 +50,14 @@ const FlashcardsPage = () => {
 
       const flashcards = response.data.flashcards;
       console.log(flashcards)
+      // const validCards = flashcards.filter(
+      //   (card) => card.question.trim() && card.answer.trim() && card.category
+      // );
+
       const validCards = flashcards.filter(
-        (card) => card.question.trim() && card.answer.trim() && card.category
-      );
+  (card) => card?.question?.trim() && card?.answer?.trim()
+);
+
 
       if (validCards.length === 0) {
         setError("No valid flashcards generated. Please refine your input.");
